@@ -2,7 +2,7 @@
 
 > **Vitrine do projeto.** O código é privado. A plataforma está no ar em **[sunvoid.com.br](https://sunvoid.com.br)**; aqui estão o problema, a solução, as telas e as decisões de arquitetura.
 
-*English summary: SUNVOID is the Brazilian community for Zenless Zone Zero, and this is its platform: agent builds, a tier list with an open scoring formula, team compositions, guides, news, deals and Pix donations. Sign-in is Discord-only, and the site and the Discord server work as one (roles, announcements, news import, support tickets). Next.js, Neon Postgres, Better Auth, Cloudflare R2, Vercel.*
+*English summary: SUNVOID is the Brazilian community for Zenless Zone Zero, and this is its platform: agent builds, a tier list with an open scoring formula, team compositions, guides, news, redeem codes, deals, a biweekly tournament, player profiles built from the in-game showcase and Pix donations. Sign-in is Discord-only, and the site and the Discord server work as one (roles, announcements, news import, build reviews, support tickets). Next.js, Neon Postgres, Better Auth, Cloudflare R2, Vercel.*
 
 ## O problema
 SUNVOID nasceu como servidor no Discord, no lançamento do jogo, e ganhou um site que era só uma ferramenta de builds. A equipe editava tudo direto no console do banco de dados, sem painel, sem revisão e sem histórico. Notícias, cargos e avisos viviam no Discord, separados do site.
@@ -12,8 +12,11 @@ Uma plataforma completa, com um painel para a equipe e o Discord como parte do p
 
 - **Agentes e builds:** a seleção estilo jogo de luta e a página de cada agente, com builds verificadas pela equipe (discos, motores-W e atributos), habilidades e a ordem de evolução.
 - **Tier list com o cálculo aberto:** cada agente ganha uma nota de 0 a 100 a partir de cinco critérios, e quem visita vê de onde veio cada ponto. A equipe ajusta no painel, vê a prévia ao vivo e só então publica.
-- **Times, guias e notícias:** composições com substitutos para cada vaga, guias escritos num editor visual e as notícias oficiais reunidas num lugar só, junto com os vídeos dos criadores parceiros.
-- **Ofertas:** jogos grátis e promoções de verdade. Os grátis da Epic e as promoções grandes da Steam chegam sozinhos, e quem quiser recebe um resumo semanal por e-mail.
+- **Times, guias e notícias:** composições com a build indicada para cada agente e substitutos para cada vaga, guias escritos num editor visual, os códigos de resgate ativos e as notícias oficiais reunidas num lugar só, junto com os vídeos dos criadores parceiros.
+- **Sunvoid Cup:** a competição da comunidade, a cada 14 dias. A inscrição é pelo site, a liga sai do custo das equipes, para cada um disputar com contas parecidas com a sua, e o ranking é ao vivo. Os títulos chegam sozinhos no Discord.
+- **O perfil do jogador:** pelo UID do jogo, a vitrine de agentes vira imagem pronta para compartilhar, ao lado das builds curtidas e da ficha de cada um na comunidade: chegada, selos, ajudas dadas e o histórico no Cup.
+- **Ajuda entre jogadores:** no Discord, um comando mostra a build de quem pede ajuda, direto da vitrine do jogo. Quem ajuda ganha pontos e concorre a Mentor do Clube.
+- **Ofertas:** jogos grátis e promoções de verdade, também de hardware. Os grátis da Epic e as promoções grandes da Steam chegam sozinhos, e quem quiser recebe um resumo semanal por e-mail.
 - **Apoio com Pix:** quem apoia entra com o Discord, paga o Pix e recebe o cargo de apoiador na hora, com agradecimento automático.
 
 ## Telas
